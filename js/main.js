@@ -1,8 +1,8 @@
 // Global variables
 let map;
 let weatherData;
-const weatherApiUrl = 'http://api.weatherapi.com/v1/current.json';
-const forecastApiUrl = 'http://api.weatherapi.com/v1/forecast.json';
+const weatherApiUrl = 'https://api.weatherapi.com/v1/current.json';
+const forecastApiUrl = 'https://api.weatherapi.com/v1/forecast.json';
 const weatherApiKey = '38ce19499a5d4262b7b142751232707';
 
 // Function to initialize the map
