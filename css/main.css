@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  #mapContainer {
+    width: 60%;
+    height: 400px;
+    background-color: #06a721;
+
+  }
+  
+  #weatherStats {
+    width: 30%;
+    margin-left: 30px;
+    background-color: aliceblue;
+    padding-left: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  #searchContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #129706;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  #temperatureChart {
+    margin-top: 20px;
+  }
+
+  .description {
+    margin-top: 20px;
+    color: #000000d5;
+    font-size: 20px;
+    margin-left: 20px;
+
+  }
+
+.custom-icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+  }
+  
+  .gif-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('./img/location.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  @keyframes radiation {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 0 40px rgba(255, 0, 0, 0), 0 0 0 80px rgba(255, 0, 0, 0.2);
+    }
+  }
+  
+  .gif-icon::before,
+  .gif-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: radiation 2s linear infinite;
+  }
+  
+  .gif-icon::before {
+    animation-delay: 0.3s;
+  }
+  
+  .gif-icon::after {
+    animation-delay: 0.7s;
+  }
+  
